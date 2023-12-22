@@ -42,10 +42,14 @@ vim.keymap.set("i", "<C-y>", "<ESC><C-r>a")
 vim.keymap.set("n", "<leader>rp", ":sp<CR><C-w>j:terminal python %<CR>i")
 
 -- skip to end or beginning of line
-vim.keymap.set("n", "<S-l>", "$")
-vim.keymap.set("n", "<S-h>", "^")
-vim.keymap.set("v", "<S-l>", "$h")
-vim.keymap.set("v", "<S-h>", "^")
+vim.keymap.set("n", "L", "$")
+vim.keymap.set("n", "H", "^")
+
+-- move to other screen when screen was split
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
 
 -- code_runner remaps
 -- vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
