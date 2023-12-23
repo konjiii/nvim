@@ -39,17 +39,23 @@ vim.keymap.set("i", "<C-z>", "<ESC>ua")
 vim.keymap.set("i", "<C-y>", "<ESC><C-r>a")
 
 -- run python file
-vim.keymap.set("n", "<leader>rp", ":sp<CR><C-w>j:terminal python %<CR>i")
+vim.keymap.set("n", "<leader>py", ":sp<CR><C-w>j:terminal python %<CR>i")
 
--- skip to end or beginning of line
+-- skip to end or beginning of line in normal and visual mode
 vim.keymap.set("n", "L", "$")
 vim.keymap.set("n", "H", "^")
+vim.keymap.set("v", "L", "$")
+vim.keymap.set("v", "H", "^")
 
 -- move to other screen when screen was split
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
+
+-- find and replace in whole file (" rpf") or in current line (" rpl")
+vim.keymap.set("n", "<leader>rpf", ":s%/")
+vim.keymap.set("n", "<leader>rpl", ":s/")
 
 -- code_runner remaps
 -- vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
