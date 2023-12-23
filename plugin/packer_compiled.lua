@@ -100,6 +100,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\kenji\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\code_runner.nvim",
     url = "https://github.com/CRAG666/code_runner.nvim"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\kenji\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   harpoon = {
     loaded = true,
     path = "C:\\Users\\kenji\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
