@@ -44,7 +44,7 @@ vim.keymap.set("n", "<leader>py", ":sp<CR><C-w>j:terminal python %<CR>i")
 -- skip to end or beginning of line in normal and visual mode
 vim.keymap.set("n", "L", "$")
 vim.keymap.set("n", "H", "^")
-vim.keymap.set("v", "L", "$")
+vim.keymap.set("v", "L", "$h")
 vim.keymap.set("v", "H", "^")
 
 -- move to other screen when screen was split
