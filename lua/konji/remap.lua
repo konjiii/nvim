@@ -55,7 +55,7 @@ vim.keymap.set("n", "<C-k>", "<C-w>k")
 
 -- find and replace in whole file (" rpf") or in current line (" rpl")
 vim.keymap.set("n", "<leader>rpf", ":%s//gc<left><left><left>")
-vim.keymap.set("n", "<leader>rpl", ":s/")
+vim.keymap.set("n", "<leader>rpl", ":s//gc<left><left><left>")
 
 -- code_runner remaps
 -- vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
