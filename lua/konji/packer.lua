@@ -66,7 +66,9 @@ return require("packer").startup(function(use)
     use "github/copilot.vim"
 
     use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons' }
+        "nvim-lualine/lualine.nvim",
+        requires = { "nvim-tree/nvim-web-devicons" }
     }
+
+    use "lewis6991/gitsigns.nvim"
 end)
