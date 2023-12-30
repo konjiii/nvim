@@ -24,9 +24,12 @@ local plugins = {
         opts = {},
     },
     { "catppuccin/nvim", name = "catppuccin" },
-    {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
     "nvim-treesitter/playground",
-    "theprimeagen/harpoon",
+    { "theprimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { {"nvim-lua/plenary.nvim"} }
+    },
     "mbbill/undotree",
     "tpope/vim-fugitive",
     {
@@ -63,6 +66,7 @@ local plugins = {
     },
     "lewis6991/gitsigns.nvim",
     "tpope/vim-rhubarb",
+    "Vimjas/vim-python-pep8-indent",
 }
 
 local opts = {}
