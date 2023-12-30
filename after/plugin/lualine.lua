@@ -70,5 +70,5 @@ require('lualine').setup {
     },
     winbar = {},
     inactive_winbar = {},
-    extensions = {'quickfix'}
+    extensions = {}
 }
