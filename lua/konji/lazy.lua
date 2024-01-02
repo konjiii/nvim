@@ -66,7 +66,6 @@ local plugins = {
     },
     "lewis6991/gitsigns.nvim",
     "tpope/vim-rhubarb",
-    "Vimjas/vim-python-pep8-indent",
 }
 
 local opts = {}

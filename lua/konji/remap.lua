@@ -18,11 +18,9 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- copy and cut to windows clipboard
-vim.keymap.set("n", "<C-c>", "\"+y")
-vim.keymap.set("v", "<C-c>", "\"+y")
+vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
-vim.keymap.set("n", "<C-x>", "\"+x")
-vim.keymap.set("v", "<C-x>", "\"+x")
+vim.keymap.set("v", "<leader>x", "\"+x")
 
 -- paste and delete without yanking
 vim.keymap.set("v", "d", "\"_d")
@@ -38,8 +36,9 @@ vim.keymap.set("i", "<C-s>", "<ESC>:w<CR>a")
 vim.keymap.set("i", "<C-z>", "<ESC>ua")
 vim.keymap.set("i", "<C-y>", "<ESC><C-r>a")
 
--- run python file
+-- split terminal and run code
 vim.keymap.set("n", "<leader>py", ":sp<CR><C-w>j:terminal python %<CR>i")
+vim.keymap.set("n", "<leader>rs", ":sp<CR><C-w>j:terminal cargo run<CR>i")
 
 -- skip to end or beginning of line in normal and visual mode
 vim.keymap.set("n", "L", "$")
@@ -53,9 +52,10 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 
--- find and replace in whole file (" rpf") or in current line (" rpl")
+-- find and replace in whole file (" rpf") or in current line (" rpl") or in current selection (" rps")
 vim.keymap.set("n", "<leader>rpf", ":%s//gc<left><left><left>")
 vim.keymap.set("n", "<leader>rpl", ":s//gc<left><left><left>")
+vim.keymap.set("v", "<leader>rps", ":s//gc<left><left><left>")
 
 -- code_runner remaps
 -- vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })

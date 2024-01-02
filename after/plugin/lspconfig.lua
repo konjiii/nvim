@@ -8,6 +8,8 @@ lspconfig.pyright.setup {
         python = {
             analysis = {
                 PythonPlatform = "Windows",
+                -- typeCheckingMode = "off",
+                -- reportGeneralTypeIssues = "none",
                 strictListInference = true,
                 strictDictionaryInference = true,
                 strictSetInference = true,
