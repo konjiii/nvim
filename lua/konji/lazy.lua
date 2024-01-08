@@ -66,6 +66,23 @@ local plugins = {
     },
     "lewis6991/gitsigns.nvim",
     "tpope/vim-rhubarb",
+    {
+        "rust-lang/rust.vim",
+        ft = "rust",
+        init = function()
+            vim.g.rustfmt_autosave = 1
+        end
+    },
+    {
+      "mrcjkb/rustaceanvim",
+      version = "^3", -- Recommended
+      ft = { "rust" },
+    },
+    {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        opts = {},
+    },
 }
 
 local opts = {}
