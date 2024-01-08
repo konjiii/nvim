@@ -1,14 +1,14 @@
 vim.g.mapleader = " "
--- -- go to file explorer
-vim.keymap.set("n", "<leader>dr", vim.cmd.Ex)
+-- go to file explorer
+vim.keymap.set("n", "<leader>dr", ":Oil<CR>")
 
 -- move selected lines with J and K
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- indent/unindent multiple lines at once
-vim.keymap.set("v", "<Tab>", ":><CR>gv")
-vim.keymap.set("v", "<S-Tab>", ":<<CR>gv")
+vim.keymap.set("v", "<Tab>", ">gv")
+vim.keymap.set("v", "<S-Tab>", "<gv")
 
 -- delete enters without moving your position with J
 vim.keymap.set("n", "J", "mzJ`z")
@@ -36,9 +36,9 @@ vim.keymap.set("i", "<C-s>", "<ESC>:w<CR>a")
 vim.keymap.set("i", "<C-z>", "<ESC>ua")
 vim.keymap.set("i", "<C-y>", "<ESC><C-r>a")
 
--- split terminal and run code
-vim.keymap.set("n", "<leader>py", ":sp<CR><C-w>j:terminal python %<CR>i")
-vim.keymap.set("n", "<leader>rs", ":sp<CR><C-w>j:terminal cargo run<CR>i")
+-- -- split terminal and run code
+-- vim.keymap.set("n", "<leader>py", ":sp<CR><C-w>j:terminal python %<CR>i")
+-- vim.keymap.set("n", "<leader>rs", ":sp<CR><C-w>j:terminal cargo run<CR>i")
 
 -- skip to end or beginning of line in normal and visual mode
 vim.keymap.set("n", "L", "$")
@@ -56,12 +56,3 @@ vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<leader>rpf", ":%s//gc<left><left><left>")
 vim.keymap.set("n", "<leader>rpl", ":s//gc<left><left><left>")
 vim.keymap.set("v", "<leader>rps", ":s//gc<left><left><left>")
-
--- code_runner remaps
--- vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
--- vim.keymap.set('n', '<leader>rf', ':RunFile<CR>', { noremap = true, silent = false })
--- vim.keymap.set('n', '<leader>rft', ':RunFile tab<CR>', { noremap = true, silent = false })
--- vim.keymap.set('n', '<leader>rp', ':RunProject<CR>', { noremap = true, silent = false })
--- vim.keymap.set('n', '<leader>rc', ':RunClose<CR>', { noremap = true, silent = false })
--- vim.keymap.set('n', '<leader>crf', ':CRFiletype<CR>', { noremap = true, silent = false })
--- vim.keymap.set('n', '<leader>crp', ':CRProjects<CR>', { noremap = true, silent = false })
