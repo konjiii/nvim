@@ -5,8 +5,8 @@ local npairs = require("nvim-autopairs")
 -- change default fast_wrap
 npairs.setup({
     fast_wrap = {
-      map = "<M-e>",
-      chars = { "{", "[", "(", '"' },
+      map = "<C-e>",
+      chars = { "{", "[", "(", '"', "'" },
       pattern = [=[[%'%"%>%]%)%}%,]]=],
       end_key = "$",
       before_key = "h",
