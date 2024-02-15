@@ -77,16 +77,26 @@ local plugins = {
         version = "^3", -- Recommended
         ft = { "rust" },
     },
-    {
-        "windwp/nvim-autopairs",
-        event = "InsertEnter",
-        opts = {},
-    },
+    -- {
+    --     "windwp/nvim-autopairs",
+    --     event = "InsertEnter",
+    --     opts = {},
+    -- },
     {
         "stevearc/oil.nvim",
         opts = {},
         dependencies = { "nvim-tree/nvim-web-devicons" }
     },
+    -- {
+    --     "folke/noice.nvim",
+    --     event = "VeryLazy",
+    --     opts = {
+    --     },
+    --     dependencies = {
+    --         "MunifTanjim/nui.nvim",
+    --         "rcarriga/nvim-notify",
+    --     }
+    -- },
 }
 
 local opts = {}
