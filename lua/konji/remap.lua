@@ -24,7 +24,8 @@ vim.keymap.set("v", "<leader>x", "\"+x")
 
 -- paste and delete without yanking
 vim.keymap.set("v", "d", "\"_d")
-vim.keymap.set("v", "<leader>p", "\"_dP")
+vim.keymap.set("v", "<leader>p", "\"0p")
+vim.keymap.set("v", "<leader>P", "\"0P")
 
 -- select all text (and keep cursor where it was)
 vim.keymap.set("n", "<C-a>", "ggVG")

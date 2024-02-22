@@ -1,3 +1,3 @@
 require('Comment').setup({
-    opleader = { line = '<C-_>' }
+    opleader = { line = '<C-/>' }
 })

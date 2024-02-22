@@ -9,9 +9,8 @@ syntax enable
 
 " Viewer options: One may configure the viewer either by specifying a built-in
 " viewer method:
-let g:vimtex_view_general_viewer = 'SumatraPDF'
-  let g:vimtex_view_general_options
-      \ = '-reuse-instance -forward-search @tex @line @pdf'
+let g:vimtex_view_general_viewer = 'okular'
+let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 
 " Or with a generic interface:
 " let g:vimtex_view_general_viewer = 'okular'
