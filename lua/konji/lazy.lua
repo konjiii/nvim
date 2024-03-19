@@ -109,16 +109,16 @@ local plugins = {
         dependencies = { "nvim-tree/nvim-web-devicons" }
     },
     -- noice
-    {
-        "folke/noice.nvim",
-        event = "VeryLazy",
-        opts = {
-        },
-        dependencies = {
-            "MunifTanjim/nui.nvim",
-            "rcarriga/nvim-notify",
-        }
-    },
+    -- {
+    --     "folke/noice.nvim",
+    --     event = "VeryLazy",
+    --     opts = {
+    --     },
+    --     dependencies = {
+    --         "MunifTanjim/nui.nvim",
+    --         "rcarriga/nvim-notify",
+    --     }
+    -- },
     -- -- database explorer dadbod
     -- {
     --     "kristijanhusak/vim-dadbod-ui",
