@@ -91,11 +91,11 @@ local plugins = {
         end
     },
     -- rust tools
-    {
-        "mrcjkb/rustaceanvim",
-        version = "^3", -- Recommended
-        ft = { "rust" },
-    },
+    -- {
+    --     "mrcjkb/rustaceanvim",
+    --     version = "^3", -- Recommended
+    --     ft = { "rust" },
+    -- },
     -- -- autopairs
     -- {
     --     "windwp/nvim-autopairs",

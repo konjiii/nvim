@@ -31,3 +31,6 @@ vim.opt.colorcolumn = "80"
 vim.g.mapleader = " "
 
 vim.opt.spell = true
+
+-- turn on inlay hints
+vim.lsp.inlay_hint.enable()

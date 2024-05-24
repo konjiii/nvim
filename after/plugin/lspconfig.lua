@@ -7,7 +7,7 @@ lspconfig.pyright.setup {
     settings = {
         python = {
             analysis = {
-                PythonPlatform = "Windows",
+                PythonPlatform = "Linux",
                 -- typeCheckingMode = "off",
                 -- reportGeneralTypeIssues = "none",
                 strictListInference = true,
@@ -15,5 +15,13 @@ lspconfig.pyright.setup {
                 strictSetInference = true,
             },
         },
+    },
+}
+
+-- rust_analyzer lsp configuration
+lspconfig.rust_analyzer.setup {
+    -- Server-specific settings. See `:help lspconfig-setup`
+    settings = {
+        ['rust-analyzer'] = {},
     },
 }
