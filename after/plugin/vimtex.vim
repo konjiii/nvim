@@ -50,3 +50,6 @@ let g:vimtex_quickfix_ignore_filters = [
       \ 'Underfull',
       \ 'Overfull',
       \]
+
+" autostart vimtex compiler when opening tex file
+autocmd User VimtexEventInitPost VimtexCompile
