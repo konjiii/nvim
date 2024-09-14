@@ -26,3 +26,27 @@ let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 " Most VimTeX mappings rely on localleader and this can be changed with the
 " following line. The default is usually fine and is the symbol "\".
 " let maplocalleader = " "
+
+" set conceallevel to hide latex code
+set conceallevel=1
+let g:vimtex_syntax_conceal = {
+      \ 'accents': 1,
+      \ 'ligatures': 1,
+      \ 'cites': 1,
+      \ 'fancy': 1,
+      \ 'spacing': 1,
+      \ 'greek': 1,
+      \ 'math_bounds': 1,
+      \ 'math_delimiters': 1,
+      \ 'math_fracs': 1,
+      \ 'math_super_sub': 1,
+      \ 'math_symbols': 1,
+      \ 'sections': 1,
+      \ 'styles': 1,
+      \}
+
+" ignore certain warnings
+let g:vimtex_quickfix_ignore_filters = [
+      \ 'Underfull',
+      \ 'Overfull',
+      \]
