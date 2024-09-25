@@ -19,13 +19,6 @@ local plugins = {
         dependencies = { {"nvim-lua/plenary.nvim"} }
     },
     -- theme for neovim
-    {
-        "folke/tokyonight.nvim",
-        lazy = false,
-        priority = 1000,
-        opts = {},
-    },
-    -- theme for neovim
     { "catppuccin/nvim", name = "catppuccin" },
     -- treesitter for better syntax highlighting
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
@@ -58,19 +51,16 @@ local plugins = {
         }
     },
     -- ctrl+/ to comment out block of code
-    {
-        'numToStr/Comment.nvim',
-        opts = {
-            -- add any options here
-        },
-        lazy = false,
-    },
+    'numToStr/Comment.nvim',
     -- indentation guides
     "lukas-reineke/indent-blankline.nvim",
     -- colorful brackets
     "hiphish/rainbow-delimiters.nvim",
     -- for latex support
-    "lervag/vimtex",
+    {
+        "lervag/vimtex",
+        ft = "tex",
+    },
     -- copilot
     "github/copilot.vim",
     -- statusline
@@ -90,6 +80,22 @@ local plugins = {
             vim.g.rustfmt_autosave = 1
         end
     },
+    -- seamless navigation between nvim and tmux
+    {
+        "christoomey/vim-tmux-navigator",
+        cmd = {
+            "TmuxNavigateLeft",
+            "TmuxNavigateDown",
+            "TmuxNavigateUp",
+            "TmuxNavigateRight",
+        },
+        keys = {
+            { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
+            { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
+            { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
+            { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
+        },
+    },
     -- rust tools
     -- {
     --     "mrcjkb/rustaceanvim",
@@ -108,35 +114,6 @@ local plugins = {
         opts = {},
         dependencies = { "nvim-tree/nvim-web-devicons" }
     },
-    -- noice
-    -- {
-    --     "folke/noice.nvim",
-    --     event = "VeryLazy",
-    --     opts = {
-    --     },
-    --     dependencies = {
-    --         "MunifTanjim/nui.nvim",
-    --         "rcarriga/nvim-notify",
-    --     }
-    -- },
-    -- -- database explorer dadbod
-    -- {
-    --     "kristijanhusak/vim-dadbod-ui",
-    --     dependencies = {
-    --         { "tpope/vim-dadbod", lazy = true },
-    --         { "kristijanhusak/vim-dadbod-completion", ft = { "sql", "mysql", "plsql", "db" }, lazy = true },
-    --     },
-    --     cmd = {
-    --         "DBUI",
-    --         "DBUIToggle",
-    --         "DBUIAddConnection",
-    --         "DBUIFindBuffer",
-    --     },
-    --     init = function()
-    --         -- dbui config
-    --         vim.g.db_ui_use_nerd_fonts = 1
-    --     end,
-    -- },
 }
 
 local opts = {}

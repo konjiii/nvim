@@ -28,7 +28,7 @@ let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 " let maplocalleader = " "
 
 " set conceallevel to hide latex code
-set conceallevel=1
+set conceallevel=2
 let g:vimtex_syntax_conceal = {
       \ 'accents': 1,
       \ 'ligatures': 1,
