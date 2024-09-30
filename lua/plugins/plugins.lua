@@ -49,7 +49,7 @@ return {
         ft = "tex",
     },
     -- copilot
-    "github/copilot.vim",
+    -- "github/copilot.vim",
     -- statusline
     {
         "nvim-lualine/lualine.nvim",
