@@ -1,1 +1,1 @@
-require("konji")
+require("config")
