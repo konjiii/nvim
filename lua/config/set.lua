@@ -35,4 +35,4 @@ vim.opt.spell = true            -- enable spell checking
 -- vim.g.tmux_navigator_no_wrap = 1
 
 -- turn on inlay hints
-vim.lsp.inlay_hint.enable()
+-- vim.lsp.inlay_hint.enable()
