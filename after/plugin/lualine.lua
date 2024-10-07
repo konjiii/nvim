@@ -19,13 +19,13 @@ require('lualine').setup {
     },
     sections = {
         lualine_a = {'mode'},
-        lualine_b = {{'FugitiveHead', icon = ''}, 'diff', 'diagnostics'},
-        lualine_c = {
+        lualine_b = {
             {
                 'filename',
                 file_status = true,      -- Displays file status (readonly status, modified status)
                 newfile_status = true,  -- Display new file status (new file means no write after created)
-                path = 1,                -- 0: Just the filename
+                path = 0,
+                -- 0: Just the filename
                 -- 2: Relative path
                 -- 3: Absolute path
                 -- 4: Absolute path, with tilde as the home directory
@@ -39,8 +39,9 @@ require('lualine').setup {
                     unnamed = '[No Name]', -- Text to show for unnamed buffers.
                     newfile = '[New]',     -- Text to show for newly created file before first write
                 },
-            }, 'filesize'
+            },
         },
+        lualine_c = {'filesize'},
         lualine_x = {'encoding', 'fileformat',
             {
                 'filetype',
