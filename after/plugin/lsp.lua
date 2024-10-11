@@ -42,3 +42,13 @@ cmp.setup({
     }),
 })
 
+-- format_on_save options
+lsp_zero.format_on_save({
+    format_opts = {
+        async = true,
+        timeout_ms = 10000,
+    },
+    servers = {
+        ['clangd'] = {'c', 'cpp'},
+    },
+})
