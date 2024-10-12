@@ -90,4 +90,9 @@ return {
 		"stevearc/conform.nvim",
 		opts = {},
 	},
+	-- repl integration
+	{
+		"jpalardy/vim-slime",
+		ft = "python",
+	},
 }

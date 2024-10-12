@@ -18,12 +18,12 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- copy and cut to windows clipboard
-vim.keymap.set("v", "<leader>y", "\"+y")
-vim.keymap.set("n", "<leader>Y", "\"+Y")
-vim.keymap.set("v", "<leader>x", "\"+x")
+vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>Y", '"+Y')
+vim.keymap.set("v", "<leader>x", '"+x')
 
 -- delete without yanking
-vim.keymap.set("v", "d", "\"_d")
+vim.keymap.set("v", "d", '"_d')
 
 -- select all text (and keep cursor where it was)
 vim.keymap.set("n", "<C-a>", "ggVG")
