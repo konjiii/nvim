@@ -29,6 +29,3 @@ lspconfig.rust_analyzer.setup({
 		["rust-analyzer"] = {},
 	},
 })
-
--- assembly lsp configuration
-lspconfig.asm_lsp.setup({})
