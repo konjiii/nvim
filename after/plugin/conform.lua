@@ -7,5 +7,6 @@ require("conform").setup({
 		lua = { "stylua" },
 		python = { "black" },
 		c = { "clang-format" },
+		ocaml = { "ocamlformat" },
 	},
 })
