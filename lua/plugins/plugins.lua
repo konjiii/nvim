@@ -95,4 +95,14 @@ return {
 		"jpalardy/vim-slime",
 		ft = "python",
 	},
+	-- neodev
+	{
+		"folke/neodev.nvim",
+		opts = {},
+	},
+	-- debugging
+	{
+		"rcarriga/nvim-dap-ui",
+		dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
+	},
 }

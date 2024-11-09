@@ -6,5 +6,6 @@ require("conform").setup({
 		c = { "clang-format" },
 		cpp = { "clang-format" },
 		ocaml = { "ocamlformat" },
+		sh = { "shfmt" },
 	},
 })
