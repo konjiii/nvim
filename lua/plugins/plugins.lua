@@ -107,4 +107,8 @@ return {
 	},
 	-- very effective vim motions
 	"ggandor/leap.nvim",
+	{
+		"kevinhwang91/nvim-ufo",
+		dependencies = { "kevinhwang91/promise-async" },
+	},
 }
