@@ -111,4 +111,11 @@ return {
 		"kevinhwang91/nvim-ufo",
 		dependencies = { "kevinhwang91/promise-async" },
 	},
+	-- lsp status messages
+	{
+		"j-hui/fidget.nvim",
+		opts = {
+			-- options
+		},
+	},
 }
