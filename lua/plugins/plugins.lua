@@ -105,4 +105,6 @@ return {
 		"rcarriga/nvim-dap-ui",
 		dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
 	},
+	-- very effective vim motions
+	"ggandor/leap.nvim",
 }
