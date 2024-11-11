@@ -1,6 +1,4 @@
 vim.g.mapleader = " "
--- go to file explorer
-vim.keymap.set("n", "<leader>dr", ":Oil<CR>")
 
 -- move selected lines with J and K
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
