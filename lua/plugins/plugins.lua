@@ -100,10 +100,16 @@ return {
 		"jpalardy/vim-slime",
 		ft = "python",
 	},
-	-- neodev
+	-- lazydev: proper luaLS configuration for editing neovim config
 	{
-		"folke/neodev.nvim",
-		opts = {},
+		"folke/lazydev.nvim",
+		opts = {
+			library = {
+				-- See the configuration section for more details
+				-- Load luvit types when the `vim.uv` word is found
+				{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
+			},
+		},
 	},
 	-- debugging
 	{
