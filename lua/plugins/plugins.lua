@@ -146,4 +146,5 @@ return {
 		"nvzone/typr",
 		dependencies = "nvzone/volt",
 	},
+	"nacro90/numb.nvim",
 }
