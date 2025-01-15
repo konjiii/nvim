@@ -95,11 +95,6 @@ return {
 		"stevearc/conform.nvim",
 		opts = {},
 	},
-	-- repl integration
-	{
-		"jpalardy/vim-slime",
-		ft = "python",
-	},
 	-- lazydev: proper luaLS configuration for editing neovim config
 	{
 		"folke/lazydev.nvim",
@@ -152,5 +147,6 @@ return {
 		"nvzone/typr",
 		dependencies = "nvzone/volt",
 	},
+	-- peek inputted line number
 	"nacro90/numb.nvim",
 }
